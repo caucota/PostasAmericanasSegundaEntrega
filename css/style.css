@@ -132,7 +132,6 @@ nav ul li a {
     }
 
     .divHeaderGeneralNombreSitio{
-        /*display: inline;*/
         display: grid;
         grid-template-areas: 
         "icono nada ayuda"
@@ -156,12 +155,28 @@ nav ul li a {
         grid-area: ayuda;
     }
 
-/* Media Query Felicitaciones */
-#felicitacionesFelicitaciones{
+    /* Media Query Felicitaciones */
+    #felicitacionesFelicitaciones{
     width: 100%;
-}
-/* Fin Media Query Felicitaciones */
+    }
+    /* Fin Media Query Felicitaciones */
 
+    /* Media Query Contacto */
+    #formContacto {
+        width: 100%;
+    }
+    
+    #contactoDivGral {
+        display: block;    
+        align-content: center;
+        text-align:center;
+        width: 100%;
+    }
+
+    #textAreaConsulta{
+        width: 100%;
+    }    
+    /*Fin media Query Contacto */
 }
 
 @media only screen and (min-width: 457px) and (max-width: 767px){
@@ -191,9 +206,7 @@ nav ul li a {
     .navMenu ul li{
         display: block;
         width: 80%;
-        /*position: relative;*/
         font-size: 15px;
-        /*border: 1px solid rgb(54, 54, 27);*/
     }
 
     .imagenFondo .h1Bienvenida{
@@ -227,10 +240,7 @@ nav ul li a {
 @media only screen and (min-width: 768px) and (max-width: 1000px){
     .navMenu ul li{
         display: inline-table;
-        /*width: 50%;*/
-        /*position: relative;*/
         font-size: 17px;
-        /*border: 1px solid rgb(54, 54, 27);*/
     }
 }
 
@@ -277,16 +287,15 @@ nav ul li a {
 }
 
 
-/* Media Query min 1019px  INSCRIPCION EVENTOS  */
 
 @media only screen and (min-width: 1019px) {
 
+    /* Media Query min 1019px  INSCRIPCION EVENTOS  */
     .gridInscripcionEventosDatosPers > * {
         border: 2px solid rgba(57, 201, 141, 0.363);
         background-color: whitesmoke;
         background-image: radial-gradient( rgba(135, 233, 187, 0.356), rgba(184, 180, 128, 0.89));
     }
-
 
     .gridInscripcionEventosDatosPers{
         display: grid;
@@ -295,7 +304,6 @@ nav ul li a {
         margin-left: 10%;
         margin-right: 10%;
     }
-
 
     .gridInscripcionEventosDatosPers > #tituloInscripcion {
         grid-column: 1/4 ;
@@ -337,6 +345,7 @@ nav ul li a {
         grid-row:4/4;
         border-right: 0;
     }
+
     .gridInscripcionEventosDatosPers > #equipoInscripcion {
         grid-column: 2/2 ;
         grid-row:4/4;
@@ -353,10 +362,10 @@ nav ul li a {
         margin-top: 8%;
         margin-left: 8%;
     }
+
     #datosContactoInscripcion div input{
         width: 90%;
     }
-
 
     .gridInscripcionEventosDatosPers > #divTerminosInscripcion {
         grid-column: 1/4 ;
@@ -373,6 +382,7 @@ nav ul li a {
     #inscripcionEventosinputApellido{
         margin-left: 21px;
     }
+
     #inscripcionEventosinputNombre{
         margin-left: 21px;
     }
@@ -380,18 +390,17 @@ nav ul li a {
     #inscripcionEventosinputDocumento {
         margin-left: 1%;
     }
+
     #inscripcionEventossectionEquipo{
         width: 53%;
         margin-left: 7%;
-
     }
 
     #inscripcionFechaNacimientoInscripcion {
         margin-left: 2%;
     }
+    /* FIN Media Query min 1019px  INSCRIPCION EVENTOS  */
 }
-
-/* FIN Media Query min 1019px  INSCRIPCION EVENTOS  */
 
 
 @media only screen and (max-width: 1020px){
@@ -403,10 +412,10 @@ nav ul li a {
         margin-right: 10%;
         text-align: center;
     }
+
     main .itemCuandoyDonde {
         display: block;
     }
-
 
     main .maps {
         display: flex;
@@ -419,26 +428,27 @@ nav ul li a {
         width: 100%;
         margin: 2%;
     }
-    
 
     section .footerGridProximosEventos{
         display: block;
         padding-bottom: 2%;
     }
+
     div .consideraciones {
         flex-direction: column;
         align-items: center;
         text-align: center;
         background-color: azure;
     }
+
     .consideraciones .tituloGridHijo {
         text-align: center;
     }
+
     .consideraciones .ConsideracionesFlex{
         display: inline-block;
         justify-items: center;
     }
-    
 
     section .categorias {
         flex-direction: column;  
@@ -462,7 +472,7 @@ nav ul li a {
         padding-bottom: 2%;
     }
 
-   form .gridInscripcionEventosDatosPers{
+    form .gridInscripcionEventosDatosPers{
         display: grid;
         grid-template-areas: 
         "titulo titulo"
@@ -475,7 +485,6 @@ nav ul li a {
         margin-left: 5%;
         margin-right: 5%;
     } 
-    
 
     #inscripcionEventosinputApellido{
         margin-left: 7%;
@@ -530,6 +539,7 @@ nav ul li a {
     #inscripcionEventosinputApellido{
         margin-left: 21px;
     }
+
     #inscripcionEventosinputNombre{
         margin-left: 21px;
     }
@@ -537,10 +547,10 @@ nav ul li a {
     #inscripcionEventosinputDocumento {
         margin-left: 1%;
     }
+
     #inscripcionEventossectionEquipo{
         width: 55%;
         margin-left: 8%;
-
     }
 
     #inscripcionFechaNacimientoInscripcion {
@@ -551,15 +561,33 @@ nav ul li a {
 
 }
 
+
+@media screen and (min-width:451px) and (max-width: 1224px) {
+    /* Media query Contacto */
+    #sectionPrincipalContacto{
+        width: 80%;
+    }
+
+    #contactoDivGral {
+        display: block;    
+        align-content: center;
+        text-align:center;
+        width: 100%;
+    }
+
+    #textAreaConsulta{
+        width: auto;
+    }
+    /* Fin Media query Contacto */
+
+}
+
 /**** FIN MediaQuerys ***********/
 
 
 
 /* Footer */
-
 .classFooter {
-    /*background-color:rgba(0, 0, 0, 0.904) ;*/
-    /*display: grid;*/
     background-color:black;
     padding-top: 2%;      
 }
@@ -577,8 +605,6 @@ nav ul li a {
 .imagenIconoRedes {
     width: 55px;
     height: 40px;
-    /*padding-right: 10px;
-    padding-left: 20px;*/
 
 }
 .imagenIconoRedes:hover {
@@ -612,11 +638,9 @@ nav ul li a {
     padding-right: 1%;
     padding-top: 1%;
     background-color: rgba(0, 0, 0, 0.904) ;    
-/*    background-color: rgba(195, 185, 241, 0.568);*/
 }
 
 .section_articlePrincipal {
-    /*background-color: rgba(195, 185, 241, 0.568);*/
     border-style:inset;
     display: inline-block;
     background-color: whitesmoke;   
@@ -624,7 +648,6 @@ nav ul li a {
 }
 
 .tituloArticulo {
-    /*padding-left: 25%; */
     font-family: 'Liberation Serif', sans-serif;
     text-align: center;
     font-size: xx-large; 
@@ -640,30 +663,16 @@ nav ul li a {
 
 /* -------------- INDEX  ------------- */
 .imagenFondo{
-    /*
-    width: 120%;
-    */
     height: 800px; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.705)),  url('../img/foto_inicio_grey.jpg');
-
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
     background-blend-mode: soft-light;
-    /*background-color: rgba(48, 69, 100, 0.116);*/
-    /*background-image: url('../img/foto_inicio.jpg');*/
-    /*background: transparent url('../img/foto_inicio.jpg');*/
 }
 
 .h1Bienvenida{
     font-size: 45px;
-    /*font-family: 'Rubik Moonrocks', cursive;*/
-    /*font-family: 'Fredericka the Great', cursive;*/
-    /*font-family: 'Reenie Beanie', cursive;    */
-    /*font-style: italic;*/
-    /*color:rgb(228, 243, 22);*/
-    /*text-shadow: black 0 -3px;*/
-    /*background: linear-gradient(to right, rgba(224, 224, 230, 0.938), rgba(211, 212, 117, 0.863), rgba(252, 101, 1, 0.979));*/
     background: linear-gradient(to right, rgb(253, 116, 25), rgba(211, 212, 117, 0.863), rgba(252, 101, 1, 0.979));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -810,19 +819,18 @@ th{
     overflow: hidden;
     min-height: 400px;
     box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-  }
-  
-  .card-custom-img {
+}
+
+.card-custom-img {
     height: 200px;
     min-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-color: inherit;
-  }
-  
-  /* First border-left-width setting is a fallback */
-  .card-custom-img::after {
+}
+
+.card-custom-img::after {
     position: absolute;
     content: '';
     top: 161px;
@@ -839,9 +847,9 @@ th{
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: inherit;
-  }
-  
-  .card-custom-avatar img {
+}
+
+.card-custom-avatar img {
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
     position: absolute;
@@ -849,8 +857,8 @@ th{
     left: 1.25rem;
     width: 100px;
     height: 100px;
-  }
-  
+}
+
 
 
 #button-container{
@@ -934,6 +942,15 @@ th{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
 }
 
+.blueGradientDiagonal{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cedbe9+0,aac5de+17,6199c7+50,3a84c3+51,419ad6+59,4bb8f0+71,3a8bc2+84,26558b+100;Blue+Gloss */
+    background: rgb(206,219,233); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(97,153,199,1) 50%, rgba(58,132,195,1) 51%, rgba(65,154,214,1) 59%, rgba(75,184,240,1) 71%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 /*ICONS*/
 #clock{
 	position:absolute;
@@ -987,8 +1004,6 @@ th{
 	width:4px;
 	height:0px;
 	border:1px solid #000;
-	top:5px;
-	left:0px;
 }
 
 #order-line:nth-child(2){
@@ -1034,9 +1049,7 @@ th{
 }
 
 /* Grillas Proximos Eventos */
-main{
-    background-color: black;
-}
+
 .gridProximosEventos {
     display: grid;
     margin-left: 18%;
@@ -1055,7 +1068,6 @@ main{
     border: 2px solid rgba(57, 201, 141, 0.363);
     background-color: whitesmoke;
     background-image: radial-gradient( rgba(135, 233, 187, 0.356), rgba(184, 180, 128, 0.89));
-
 }
 
 .gridProximosEventos > header {
@@ -1087,14 +1099,8 @@ main{
     grid-area: footer;
 }
 
-
 .categorias {
     grid-area: section3;
-    /*
-    justify-content: space-evenly;
-    align-items: flex-start;
-    align-content: space-evenly;
-    */
     padding: 2%;
 }
 
@@ -1143,12 +1149,6 @@ main{
 
 
 /* -------------- MIS DATOS  ------------- */
-/*
-#sectionPrincipalMisDatos{
-    margin-left: 20%;
-    width: 60%;
-}
-*/
 #misDatosFormulario {
     margin: 10px;
 }
@@ -1224,7 +1224,6 @@ main{
 /* -------------- NOVEDADES  ------------- */
 
 .sectionNovedades {
-    /*background-color: rgba(195, 185, 241, 0.568);*/
     border-style:inset;
     background-color: whitesmoke;   
     width: 99%; 
@@ -1289,8 +1288,6 @@ main{
 
 .fotoVideoDer {
     grid-area: sectionRightDer;
-    /*transform: rotate(350deg);*/
-    /*transform: skew(10deg, 10deg);*/
 }
 #fotoNovedadDer {
     transform: rotate(350deg) translate(30px, 30px);
@@ -1302,8 +1299,6 @@ main{
     transform: rotateZ(10deg) translate(0px, 10px) scale(-0.8, 0.8);
     height: 60%;
     width: 40%;
-
-
 }
 
 
@@ -1417,44 +1412,6 @@ a.buttonVerFuenteNoticiaIzq:hover, a.buttonVerFuenteNoticiaDer:hover {
 
 #textAreaConsulta{
     padding-right: 15%;
-}
-
-
-@media screen and (max-width: 450px) {
-
-    #formContacto {
-        width: 100%;
-    }
-    
-    #contactoDivGral {
-        display: block;    
-        align-content: center;
-        text-align:center;
-        width: 100%;
-    }
-
-    #textAreaConsulta{
-        width: 100%;
-    }
-}
-
-
-
-@media screen and (min-width:451px) and (max-width: 1224px) {
-    #sectionPrincipalContacto{
-        width: 80%;
-    }
-
-    #contactoDivGral {
-        display: block;    
-        align-content: center;
-        text-align:center;
-        width: 100%;
-    }
-
-    #textAreaConsulta{
-        width: auto;
-    }
 }
 
 /* -------------- FIN CONTACTO ------------- */
