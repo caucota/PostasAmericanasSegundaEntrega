@@ -117,20 +117,36 @@ nav ul li a {
 }
 
 /**** MediaQuerys ***********/
-
-@media only screen and (min-width: 0px) and (max-width: 456px){
+@media only screen and (min-width: 0px) and (max-width: 355px){
     .divLogoNombreSitio__nombreSitio{
-        font-size: xx-large;
-        background: linear-gradient(to right, rgba(238, 238, 243, 0.555), rgb(96, 205, 248), rgba(40, 40, 230, 0.925));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
+        font-size: x-large;
     }
     .divLogoNombreSitio__imagenLogoSitio {
         width: 80px;
         height: 80px;
     }
-    
+    #sectionIconsFooter{
+        display: block;
+    }
+    #divIconosRedes{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 356px) and (max-width: 455px){
+    .divLogoNombreSitio__nombreSitio{
+        font-size: xx-large;
+    }
+    .divLogoNombreSitio__imagenLogoSitio {
+        width: 80px;
+        height: 80px;
+    }
+    #sectionIconsFooter{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 456px){
     
     section #divcontainerButton {
         padding-left: 13%;
@@ -190,6 +206,11 @@ nav ul li a {
     section #divcontainerButton {
         padding-left: 25%;
     }
+
+    .divLogoNombreSitio__imagenLogoSitio {
+        width: 100px;
+        height: 100px;
+    }    
 }
 @media only screen and (min-width: 0px) and (max-width: 600px){
     main .eventosBotones{
@@ -1175,8 +1196,6 @@ th{
 }
 .divCargaDatosText:hover {
     background-color: rgb(235, 243, 191);
-    /*height: 35px;*/
-
 }
 
 .divCargaDatosTextArea {
@@ -1490,5 +1509,6 @@ a.buttonVerFuenteNoticiaIzq:hover, a.buttonVerFuenteNoticiaDer:hover {
     75%{width: 60px; }
     100%{width: 50px;}
 }
+
 
 /*---------------- FIN AYUDA ------------------*/
