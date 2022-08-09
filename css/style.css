@@ -126,6 +126,11 @@ nav ul li a {
         -webkit-background-clip: text;
         background-clip: text;
     }
+    .divLogoNombreSitio__imagenLogoSitio {
+        width: 80px;
+        height: 80px;
+    }
+    
     
     section #divcontainerButton {
         padding-left: 13%;
@@ -153,6 +158,8 @@ nav ul li a {
     
     #divHelp{
         grid-area: ayuda;
+        justify-self: center;
+        align-self: center;
     }
 
     /* Media Query Felicitaciones */
