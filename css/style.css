@@ -131,6 +131,10 @@ nav ul li a {
     #divIconosRedes{
         display: flex;
     }
+    .imagenFondo .h1Bienvenida{
+        font-size: 28px;
+    }
+
 }
 
 @media only screen and (min-width: 356px) and (max-width: 455px){
@@ -144,6 +148,10 @@ nav ul li a {
     #sectionIconsFooter{
         display: flex;
     }
+    .imagenFondo .h1Bienvenida{
+        font-size: 30px;
+    }
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 456px){
@@ -203,6 +211,10 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 457px) and (max-width: 767px){
+    .divLogoNombreSitio__nombreSitio{
+        font-size: xx-large;
+    }
+    
     section #divcontainerButton {
         padding-left: 25%;
     }
@@ -210,7 +222,12 @@ nav ul li a {
     .divLogoNombreSitio__imagenLogoSitio {
         width: 100px;
         height: 100px;
-    }    
+    }  
+    
+    .imagenFondo .h1Bienvenida{
+        font-size: 30px;
+    }
+    /* FIN Media Query Header */    
 }
 @media only screen and (min-width: 0px) and (max-width: 600px){
     main .eventosBotones{
@@ -237,9 +254,6 @@ nav ul li a {
         font-size: 15px;
     }
 
-    .imagenFondo .h1Bienvenida{
-        font-size: 38px;
-    }
     /* FIN Media Query Header */
 
 
